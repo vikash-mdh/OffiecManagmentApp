@@ -33,7 +33,7 @@ public class EmployeeRepository {
     }
 
     public Employee getAllEmpoyees() {
-        double maxSalary = 0;
+        double maxSalary =  Integer.MAX_VALUE;
         Employee highestPaidEmp = null;
 
         for(int empId : empDB.keySet()){
